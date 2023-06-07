@@ -16,7 +16,7 @@ const Home = ({ toggleTheme }) => {
   return (
     <div style={{ transition: 'all 1s ease-in-out' }}>
       <Helmet>
-        <title>Dream Office Setup by Interior Karwalo</title>
+        <title>Dream House Setup by Interior Karwalo</title>
         <meta name='description' content='Interior Karwalo Setup your Dream House Interior, Designed by our Professional Interior Designers' />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="interior karwalo, interior" />
