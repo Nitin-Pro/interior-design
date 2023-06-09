@@ -18,12 +18,19 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <meta charset="UTF-8" />
+
         <title>About Interier Karwalo</title>
         <meta name="description" content="Top Interior Karwalo design services for commercial & residential spaces. Get inspired by our expert team." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="about interior karwalo" />
         <link rel="canonical" href="https://interiorkarwalo.com/about" />
+
+        {/* Open Graph Meta Data */}
+        <meta property="og:title" content="About Interier Karwalo" />
+        <meta property="og:description" content="Top Interior Karwalo design services for commercial & residential spaces. Get inspired by our expert team." />
+        <meta property="og:image" content="/images/logo.svg" />
+        <meta property="og:url" content="https://interiorkarwalo.com/about" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="about">
         <Header />

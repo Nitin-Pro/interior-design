@@ -16,12 +16,23 @@ const Home = ({ toggleTheme }) => {
   return (
     <div style={{ transition: 'all 1s ease-in-out' }}>
       <Helmet>
-        <meta charset="UTF-8" />
-        <title>Dream House Setup by Interior Karwalo</title>
-        <meta name='description' content='Interior Karwalo Setup your Dream House Interior, Designed by our Professional Interior Designers' />
+
+
+        <title>Interior Karwalo | Professional Interior Design Services</title>
+
+        <meta name='description' content="Elevate your home or office with Interior Karwalo. We specialize in transforming spaces to reflect your style and needs" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="interior karwalo, interior" />
         <link rel="canonical" href="https://interiorkarwalo.com/home" />
+        {/* Open Graph Meta Data */}
+        <meta property="og:title" content="Interior Karwalo | Professional Interior Design Services" />
+        <meta property="og:description" content="Elevate your home or office with Interior Karwalo. We specialize in transforming spaces to reflect your style and needs" />
+        <meta property="og:image" content="/images/logo.svg" />
+        <meta property="og:url" content="https://interiorkarwalo.com/home" />
+        <meta property="og:type" content="website" />
+
+
+        {/* Organization Schema Data */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
