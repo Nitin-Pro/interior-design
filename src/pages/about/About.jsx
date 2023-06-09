@@ -2,6 +2,7 @@ import Feed from '../../components/feed/Feed';
 import Header from '../../components/header/Header';
 import './about.css';
 import AboutDetailCard from './AboutDetailCard';
+import { Helmet } from 'react-helmet'
 import intVideo from '../../assets/int.mp4';
 import ChooseUs from '../../components/choose-us/ChooseUs';
 import Footer from '../../components/footer/Footer';
@@ -16,16 +17,17 @@ const desc2 =
 const About = () => {
   return (
     <>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <title>About Interier Karwalo</title>
+        <meta name="description" content="Top Interior Karwalo design services for commercial & residential spaces. Get inspired by our expert team." />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="about interior karwalo" />
+        <link rel="canonical" href="https://interiorkarwalo.com/about" />
+      </Helmet>
       <div className="about">
         <Header />
-        {/* <Helmet>
-          <meta charset="UTF-8" />
-          <title>About Interior Karwalo</title>
-          <meta name="description" content="The expert team of Interior Karwalo is the one-stop service that successfully covers the initial to a complex range of products." />
-          <meta name="robots" content="index, follow" />
-          <meta name="keywords" content="about interior karwalo" />
-          <link rel="canonical" href="https://interiorkarwalo.com/about" />
-        </Helmet> */}
+
         <div className="hero-wrapper">
           <h1 style={{ fontSize: '1.4rem' }}>Decoration Ideas</h1>
           <p>All the more reasons to get your dream home interiors now</p>
