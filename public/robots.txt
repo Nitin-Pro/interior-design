@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 
 
-Sitemap: http://www.yourdomain.com/sitemap.xml
+Sitemap: https://interiorkarwalo.com/sitemap.xml
