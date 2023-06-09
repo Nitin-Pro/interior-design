@@ -16,6 +16,7 @@ const Home = ({ toggleTheme }) => {
   return (
     <div style={{ transition: 'all 1s ease-in-out' }}>
       <Helmet>
+        <meta charset="UTF-8" />
         <title>Dream House Setup by Interior Karwalo</title>
         <meta name='description' content='Interior Karwalo Setup your Dream House Interior, Designed by our Professional Interior Designers' />
         <meta name="robots" content="index, follow" />
@@ -47,6 +48,7 @@ const Home = ({ toggleTheme }) => {
           })
           }
         </script>
+
       </Helmet>
       {/* <Header toggleTheme={toggleTheme} /> */}
       <div data-aos="zoom-in-up">
