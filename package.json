@@ -9,9 +9,6 @@
     "preview": "vite preview",
     "postbuild": "react-snap"
   },
-  "reactSnap": {
-    "source": "./dist"
-  },
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
     "@babel/core": "^7.22.5",
