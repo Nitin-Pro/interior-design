@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import { HelmetProvider } from "react-helmet-async"
-import { hydrate, render } from "react-dom";
+import { hydrate, render } from 'react-dom';
+
+
 
 
 // ReactDOM.createRoot(document.getElementById('root')).render(
