@@ -6,6 +6,8 @@ import '../service.css';
 import Footer from '../../../components/footer/Footer';
 import { compareImagesCorporate } from '../../../utils/compareImages';
 import { imgStyle } from '../../../utils/imageStyle';
+import { Helmet } from 'react-helmet';
+
 const randomImages = [
   {
     url: 'https://www.cherryhill.in/img/neuland/neuland2.jpg',
@@ -47,6 +49,22 @@ const GypsumPartition = () => {
             width: '100%',
           }}
         />
+
+        <Helmet>
+
+          <title>Expert Gypsum Partition Contractor In India | Interior Karwalo</title>
+          <meta name="description" content="Get professional solutions from the leading Gypsum Partition Contractor In India. Enhance your space with our expert gypsum partition services." />
+          <meta name="robots" content="index, follow" />
+          <meta name="keywords" content="gypsum partition contractor in india, gypsum partition contractor" />
+          <link rel="canonical" href="https://interiorkarwalo.com/services/gypsum-partition" />
+
+          {/* Open Graph Meta Data */}
+          <meta property="og:title" content="Expert Gypsum Partition Contractor In India | Interior Karwalo" />
+          <meta property="og:description" content="Get professional solutions from the leading Gypsum Partition Contractor In India. Enhance your space with our expert gypsum partition services." />
+          <meta property="og:image" content="/images/logo.svg" />
+          <meta property="og:url" content="https://interiorkarwalo.com/services/gypsum-partition" />
+          <meta property="og:type" content="website" />
+        </Helmet>
 
         <div className="service-image-container">
           <div className="service-image-container-left">

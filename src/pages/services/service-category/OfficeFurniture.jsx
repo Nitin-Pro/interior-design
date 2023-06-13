@@ -8,6 +8,8 @@ import {
   OfficefurnitureImage,
 } from "../../../utils/compareImages";
 import { imgStyle } from "../../../utils/imageStyle";
+import { Helmet } from "react-helmet";
+
 const randomImages = [
   {
     url: "https://www.cherryhill.in/img/optum/optum3.jpg",
@@ -49,7 +51,21 @@ const OfficeFurnitue = () => {
             width: "100%",
           }}
         />
+        <Helmet>
 
+          <title>Modern Office Furniture in India | Interior Karwalo</title>
+          <meta name="description" content="Upgrade your workspace with our quality office furniture solutions. Find the perfect furniture pieces for your workspace. Your trusted office furniture provider." />
+          <meta name="robots" content="index, follow" />
+          <meta name="keywords" content="office furniture in india, office furniture" />
+          <link rel="canonical" href="https://interiorkarwalo.com/services/office-furniture" />
+
+          {/* Open Graph Meta Data */}
+          <meta property="og:title" content="Modern Office Furniture in India | Interior Karwalo" />
+          <meta property="og:description" content="Upgrade your workspace with our quality office furniture solutions. Find the perfect furniture pieces for your workspace. Your trusted office furniture provider." />
+          <meta property="og:image" content="/images/logo.svg" />
+          <meta property="og:url" content="https://interiorkarwalo.com/services/office-furniture" />
+          <meta property="og:type" content="website" />
+        </Helmet>
         <div className="service-image-container">
           <div className="service-image-container-left">
             <h2 className="service-main-title-d">Office Furniture In India</h2>

@@ -2,6 +2,7 @@ import { formatDistanceToNow } from 'date-fns';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 
 import './blog.css';
 
@@ -28,7 +29,23 @@ const Blogs = () => {
   }, []);
 
   return (
+
     <div>
+      <Helmet>
+
+        <title>Interior Design Blogs | Tips & Inspiration | Interior Karwalo</title>
+        <meta name="description" content="Expert tips, inspiration, and ideas for stunning interiors. Stay updated with the latest trends and techniques. Your trusted partner in design." />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="interior design blog" />
+        <link rel="canonical" href="https://interiorkarwalo.com/blogs" />
+
+        {/* Open Graph Meta Data */}
+        <meta property="og:title" content="Interior Design Blogs | Tips & Inspiration | Interior Karwalo" />
+        <meta property="og:description" content="Expert tips, inspiration, and ideas for stunning interiors. Stay updated with the latest trends and techniques. Your trusted partner in design." />
+        <meta property="og:image" content="/images/logo.svg" />
+        <meta property="og:url" content="https://interiorkarwalo.com/blogs" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div className="container container-flex">
         <main role="main" className="b-main">
           <article className="article-featured">
@@ -85,6 +102,7 @@ const Blogs = () => {
         </main>
       </div>
     </div>
+
   );
 };
 

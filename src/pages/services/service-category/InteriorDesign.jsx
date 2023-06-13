@@ -10,6 +10,8 @@ import {
   compareImagesGypsumFalse,
 } from "../../../utils/compareImages";
 import { imgStyle } from "../../../utils/imageStyle";
+import { Helmet } from "react-helmet";
+
 
 const randomImages = [
   {
@@ -52,6 +54,22 @@ const InteriorDesign = () => {
             width: "100%",
           }}
         />
+
+        <Helmet>
+
+          <title>Expert Interior Design Consultant in India | Interior Karwalo</title>
+          <meta name="description" content="Transform your space with our expert interior design services. Get personalized consultation from the leading Interior Design Consultant in India." />
+          <meta name="robots" content="index, follow" />
+          <meta name="keywords" content="interior design consultant in india" />
+          <link rel="canonical" href="https://interiorkarwalo.com/services/interior-design" />
+
+          {/* Open Graph Meta Data */}
+          <meta property="og:title" content="Expert Interior Design Consultant in India | Interior Karwalo" />
+          <meta property="og:description" content="Transform your space with our expert interior design services. Get personalized consultation from the leading Interior Design Consultant in India." />
+          <meta property="og:image" content="/images/logo.svg" />
+          <meta property="og:url" content="https://interiorkarwalo.com/services/interior-design" />
+          <meta property="og:type" content="website" />
+        </Helmet>
 
         <div className="service-image-container">
           <div className="service-image-container-left">

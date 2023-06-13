@@ -5,6 +5,8 @@ import "../service.css";
 import Footer from "../../../components/footer/Footer";
 import { compareImagesCorporate } from "../../../utils/compareImages";
 import { imgStyle } from "../../../utils/imageStyle";
+import { Helmet } from "react-helmet";
+
 const randomImages = [
   {
     url: "https://www.cherryhill.in/img/ibm2/ibm12.jpg",
@@ -46,7 +48,21 @@ const CorporateOffice = () => {
             width: "100%",
           }}
         />
+        <Helmet>
 
+          <title>Corporate Office Interior Design Services | Interior Karwalo</title>
+          <meta name="description" content="Enhance your corporate office with professional office interior design services. Transform your workspace and boost productivity. Your trusted partner in design." />
+          <meta name="robots" content="index, follow" />
+          <meta name="keywords" content="office interior design services" />
+          <link rel="canonical" href="https://interiorkarwalo.com/services/corporate-office" />
+
+          {/* Open Graph Meta Data */}
+          <meta property="og:title" content="Corporate Office Interior Design Services | Interior Karwalo" />
+          <meta property="og:description" content="Enhance your corporate office with professional office interior design services. Transform your workspace and boost productivity. Your trusted partner in design." />
+          <meta property="og:image" content="/images/logo.svg" />
+          <meta property="og:url" content="https://interiorkarwalo.com/services/corporate-office" />
+          <meta property="og:type" content="website" />
+        </Helmet>
         <div className="service-image-container">
           <div className="service-image-container-left">
             <h2 className="service-main-title-d">

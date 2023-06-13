@@ -5,6 +5,8 @@ import "../service.css";
 import Footer from "../../../components/footer/Footer";
 import { compareImagesGypsumFalse } from "../../../utils/compareImages";
 import { imgStyle } from "../../../utils/imageStyle";
+import { Helmet } from "react-helmet";
+
 const randomImages = [
   {
     url: "https://www.cherryhill.in/img/AzurePower/ap_4.jpg",
@@ -36,6 +38,21 @@ const GypsumFalse = () => {
 
   return (
     <>
+      <Helmet>
+
+        <title>Gypsum False Ceiling Interior Design Services | Interior Karwalo</title>
+        <meta name="description" content="Transform your space with professional gypsum false ceiling services. Enhance aesthetics and functionality. Your trusted partner in gypsum false ceiling design." />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="gypsum false ceiling interior design services, gypsum false ceiling services" />
+        <link rel="canonical" href="https://interiorkarwalo.com/services/gypsum-false" />
+
+        {/* Open Graph Meta Data */}
+        <meta property="og:title" content="Gypsum False Ceiling Interior Design Services | Interior Karwalo" />
+        <meta property="og:description" content="Transform your space with professional gypsum false ceiling services. Enhance aesthetics and functionality. Your trusted partner in gypsum false ceiling design." />
+        <meta property="og:image" content="/images/logo.svg" />
+        <meta property="og:url" content="https://interiorkarwalo.com/services/gypsum-false" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div className="container">
         <Header />
         {/* <hr /> */}
