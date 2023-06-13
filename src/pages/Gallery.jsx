@@ -5,21 +5,6 @@ import { Helmet } from 'react-helmet';
 const Gallery = () => {
   return (
     <div>
-      <Helmet>
-
-        <title>Interior Design Gallery | Explore Our Work | Interior Karwalo</title>
-        <meta name="description" content="Browse through our interior design gallery and be inspired by our stunning work. Discover creative designs and ideas for your space. " />
-        <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="interior design gallery" />
-        <link rel="canonical" href="https://interiorkarwalo.com/gallery" />
-
-        {/* Open Graph Meta Data */}
-        <meta property="og:title" content="Interior Design Gallery | Explore Our Work | Interior Karwalo" />
-        <meta property="og:description" content="Browse through our interior design gallery and be inspired by our stunning work. Discover creative designs and ideas for your space. " />
-        <meta property="og:image" content="/images/logo.svg" />
-        <meta property="og:url" content="https://interiorkarwalo.com/gallery" />
-        <meta property="og:type" content="website" />
-      </Helmet>
       <main>
         <h2 className="gallery-title">Projects Gallery</h2>
         <div className="grid-container container">
