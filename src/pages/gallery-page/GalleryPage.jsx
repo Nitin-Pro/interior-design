@@ -8,6 +8,8 @@ import SubGallery1 from './sub-gallery/SubGallery1';
 import SubGallery2 from './sub-gallery/SubGallery2';
 import SubGallery3 from './sub-gallery/SubGallery3';
 import Footer from '../../components/footer/Footer';
+import { Helmet } from 'react-helmet';
+
 const GalleryPage = () => {
   const [category, setCategory] = useState(0);
   const [mainImage, setMainImage] = useState(allImageLinks[0][0]);
@@ -25,6 +27,21 @@ const GalleryPage = () => {
   return (
     <div>
       <Header />
+      <Helmet>
+
+        <title>Interior Design Gallery | Explore Our Work | Interior Karwalo</title>
+        <meta name="description" content="Browse through our interior design gallery and be inspired by our stunning work. Discover creative designs and ideas for your space. " />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="interior design gallery" />
+        <link rel="canonical" href="https://interiorkarwalo.com/gallery" />
+
+        {/* Open Graph Meta Data */}
+        <meta property="og:title" content="Interior Design Gallery | Explore Our Work | Interior Karwalo" />
+        <meta property="og:description" content="Browse through our interior design gallery and be inspired by our stunning work. Discover creative designs and ideas for your space. " />
+        <meta property="og:image" content="/images/logo.svg" />
+        <meta property="og:url" content="https://interiorkarwalo.com/gallery" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div style={{ height: '100px' }} />
       {/* <div>
         <Dropdown
