@@ -39,23 +39,21 @@ const Home = ({ toggleTheme }) => {
             "@type": "Organization",
             "name": "Interior Karwalo",
             "alternateName": "Interior Karwalo",
-            "url": "https://interiorkarwalo.com/",
+            "url": "https://interiorkarwalo.com/home",
             "logo": "https://interiorkarwalo.com/interior-design-logo.svg",
-            "contactPoint": [{
-              "@type": "ContactPoint",
-              "telephone": "+1888-297-6869",
-              "contactType": "customer service",
-              "contactOption": "TollFree",
-              "areaServed": "US",
-              "availableLanguage": "en"
-            }, {
+            "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "+91 8630819631",
               "contactType": "customer service",
               "contactOption": "TollFree",
               "areaServed": "IN",
-              "availableLanguage": "Hindi"
-            }]
+              "availableLanguage": ["Hindi", "en"]
+            },
+            "sameAs": [
+              "https://www.facebook.com/interiorkarwalo",
+              "https://www.instagram.com/interiorkarwalo/",
+              "https://www.linkedin.com/company/interior-karwalo/"
+            ]
           })
           }
         </script>
