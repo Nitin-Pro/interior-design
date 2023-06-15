@@ -36,9 +36,6 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <Helmet>
-          <meta http-equiv="X-Frame-Options" content="DENY" />
-        </Helmet>
         <Routes>
           <Route element={<Home />} path="/home" />
           <Route element={<Start />} path="/" />
