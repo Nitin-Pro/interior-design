@@ -26,6 +26,7 @@ import EditBlog from './pages/blogs/EditBlog';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
+import { Helmet } from 'react-helmet';
 
 function App() {
   useEffect(() => {
@@ -33,52 +34,58 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <div>
-        <Routes>
-          <Route element={<Home />} path="/home" />
-          <Route element={<Start />} path="/" />
+    <>
+      <Helmet>
+        <meta http-equiv="X-Frame-Options" content="DENY" />
+      </Helmet>
+      <BrowserRouter>
+        <div>
 
-          <Route element={<Contact />} path="/contact" />
-          <Route element={<About />} path="/about" />
-          <Route element={<GalleryPage />} path="/gallery" />
+          <Routes>
+            <Route element={<Home />} path="/home" />
+            <Route element={<Start />} path="/" />
 
-          {/* blogs */}
-          <Route element={<BlogOutlet />}>
-            <Route element={<Blogs />} path="/blogs" />
-            <Route element={<SingleBlog />} path="/blogs/:id" />
-            <Route element={<EditBlog />} path="/blogs/:id/edit" />
-            <Route element={<AuthRequired />}>
-              <Route path="/create-blog" element={<CreateBlog />} />
+            <Route element={<Contact />} path="/contact" />
+            <Route element={<About />} path="/about" />
+            <Route element={<GalleryPage />} path="/gallery" />
+
+            {/* blogs */}
+            <Route element={<BlogOutlet />}>
+              <Route element={<Blogs />} path="/blogs" />
+              <Route element={<SingleBlog />} path="/blogs/:id" />
+              <Route element={<EditBlog />} path="/blogs/:id/edit" />
+              <Route element={<AuthRequired />}>
+                <Route path="/create-blog" element={<CreateBlog />} />
+              </Route>
             </Route>
-          </Route>
-          {/* admin route */}
-          <Route element={<Login />} path="/login" />
+            {/* admin route */}
+            <Route element={<Login />} path="/login" />
 
-          <Route
-            element={<GypsumPartition />}
-            path="/services/gypsum-partition"
-          />
-          <Route
-            element={<CorporateOffice />}
-            path="/services/corporate-office"
-          />
-          <Route element={<GypsumFalse />} path="/services/gypsum-false" />
-          <Route
-            element={<TurnkeyInterior />}
-            path="/services/turnkey-interior"
-          />
-          <Route
-            element={<OfficeFurnitue />}
-            path="/services/office-furniture"
-          />
-          <Route
-            element={<InteriorDesign />}
-            path="/services/interior-design"
-          />
-        </Routes>
-      </div>
-    </BrowserRouter>
+            <Route
+              element={<GypsumPartition />}
+              path="/services/gypsum-partition"
+            />
+            <Route
+              element={<CorporateOffice />}
+              path="/services/corporate-office"
+            />
+            <Route element={<GypsumFalse />} path="/services/gypsum-false" />
+            <Route
+              element={<TurnkeyInterior />}
+              path="/services/turnkey-interior"
+            />
+            <Route
+              element={<OfficeFurnitue />}
+              path="/services/office-furniture"
+            />
+            <Route
+              element={<InteriorDesign />}
+              path="/services/interior-design"
+            />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 
