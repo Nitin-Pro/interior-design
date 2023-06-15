@@ -8,6 +8,11 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "devServer": {
+    "headers": {
+      "X-Frame-Options": "DENY"
+    }
+  },
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
     "@babel/core": "^7.22.5",
