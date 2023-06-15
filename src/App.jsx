@@ -34,58 +34,55 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Helmet>
-        <meta http-equiv="X-Frame-Options" content="DENY" />
-      </Helmet>
-      <BrowserRouter>
-        <div>
+    <BrowserRouter>
+      <div>
+        <Helmet>
+          <meta http-equiv="X-Frame-Options" content="DENY" />
+        </Helmet>
+        <Routes>
+          <Route element={<Home />} path="/home" />
+          <Route element={<Start />} path="/" />
 
-          <Routes>
-            <Route element={<Home />} path="/home" />
-            <Route element={<Start />} path="/" />
+          <Route element={<Contact />} path="/contact" />
+          <Route element={<About />} path="/about" />
+          <Route element={<GalleryPage />} path="/gallery" />
 
-            <Route element={<Contact />} path="/contact" />
-            <Route element={<About />} path="/about" />
-            <Route element={<GalleryPage />} path="/gallery" />
-
-            {/* blogs */}
-            <Route element={<BlogOutlet />}>
-              <Route element={<Blogs />} path="/blogs" />
-              <Route element={<SingleBlog />} path="/blogs/:id" />
-              <Route element={<EditBlog />} path="/blogs/:id/edit" />
-              <Route element={<AuthRequired />}>
-                <Route path="/create-blog" element={<CreateBlog />} />
-              </Route>
+          {/* blogs */}
+          <Route element={<BlogOutlet />}>
+            <Route element={<Blogs />} path="/blogs" />
+            <Route element={<SingleBlog />} path="/blogs/:id" />
+            <Route element={<EditBlog />} path="/blogs/:id/edit" />
+            <Route element={<AuthRequired />}>
+              <Route path="/create-blog" element={<CreateBlog />} />
             </Route>
-            {/* admin route */}
-            <Route element={<Login />} path="/login" />
+          </Route>
+          {/* admin route */}
+          <Route element={<Login />} path="/login" />
 
-            <Route
-              element={<GypsumPartition />}
-              path="/services/gypsum-partition"
-            />
-            <Route
-              element={<CorporateOffice />}
-              path="/services/corporate-office"
-            />
-            <Route element={<GypsumFalse />} path="/services/gypsum-false" />
-            <Route
-              element={<TurnkeyInterior />}
-              path="/services/turnkey-interior"
-            />
-            <Route
-              element={<OfficeFurnitue />}
-              path="/services/office-furniture"
-            />
-            <Route
-              element={<InteriorDesign />}
-              path="/services/interior-design"
-            />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </>
+          <Route
+            element={<GypsumPartition />}
+            path="/services/gypsum-partition"
+          />
+          <Route
+            element={<CorporateOffice />}
+            path="/services/corporate-office"
+          />
+          <Route element={<GypsumFalse />} path="/services/gypsum-false" />
+          <Route
+            element={<TurnkeyInterior />}
+            path="/services/turnkey-interior"
+          />
+          <Route
+            element={<OfficeFurnitue />}
+            path="/services/office-furniture"
+          />
+          <Route
+            element={<InteriorDesign />}
+            path="/services/interior-design"
+          />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
