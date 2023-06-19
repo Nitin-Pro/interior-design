@@ -22,7 +22,7 @@ const Home = ({ toggleTheme }) => {
 
         <meta name='description' content="Elevate your home or office with Interior Karwalo. We specialize in transforming spaces to reflect your style and needs" />
         <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="interior karwalo, interior" />
+        <meta name="keywords" content="interior karwalo" />
         <link rel="canonical" href="https://interiorkarwalo.com/home" />
         {/* Open Graph Meta Data */}
         <meta property="og:title" content="Interior Karwalo | Professional Interior Design Services" />
